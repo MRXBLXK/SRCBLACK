@@ -1,0 +1,91 @@
+{
+    "name": "(tebthone_muisc)",
+    "description": "بوت تشغيل الموسيقى والفيديو في االمحادثة الصوتية",
+    "logo": "https://telegra.ph/file/2d2c288212d9dd054a7a3.jpg",
+    "keywords": [
+        "محادثات صوتية",
+        "بوتات تيلجرام",
+        "تشغيل فديو",
+        "بيوجرام"
+    ],
+    "website": "https://t.me/muisc_Tepthone",
+    "repository": "https://github.com/alfaransy/REWYT",
+    "success_url": "https://t.me/muisc_Tepthone",
+    "env": {
+        "API_ID": {
+            "description": "api id تستطيع جلبه من my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "api hash تستطيع جلبه من.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "التوكين اللخاص بك من @BotFather",
+            "required": true
+        },
+        "ALIVE_IMG": {
+            "description": "صوره السورس",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "معرف بوتك @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "اسم بوتك الموجود ب @BotFather",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "معرف الحساب المساعد بدون @",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "جلسة البايروجرام",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطورين",
+            "required": true,
+            "value": "1260465030"
+        },
+        "GROUP_SUPPORT": {
+            "description": "معرف جروب الدعم بدون @",
+            "required": true,
+            "value": "Tepthone_Suporrt_Muisc"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "معرف قناتك بدون @",
+            "required": true,
+            "value": "muisc_Tepthone"
+        },
+        "OWNER_NAME": {
+            "description": "معرف المطور بدون @",
+            "required": true,
+            "value": "P17_12"
+        },
+        "ALIVE_NAME": {
+            "description": "اسم حسابك علي التيلجرام",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
